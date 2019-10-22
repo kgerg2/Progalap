@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1571757926 source:c:\users\x8b97c\documents\orai\nagyonprim\main.cpp
+	<iostream>
+	<math.h>
+	<vector>
+
