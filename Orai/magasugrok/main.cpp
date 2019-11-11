@@ -4,6 +4,7 @@
 using namespace std;
 
 struct Proba{
+    int Sorszam;
     int Magassag;
     int Db;
     bool Siker;
@@ -19,6 +20,7 @@ void beolvas(vector<vector<Proba> > &emberek){
     for(int i=1; i<=N; i++){
         cin >> M;
         for(int j=1; j<=M; j++){
+            seged.Sorszam = j;
             cin >> seged.Magassag >> seged.Db >> c;
             seged.Siker = c == 'y';
             egyproba.push_back(seged);
@@ -42,9 +44,14 @@ Proba legjobbugras(vector<Proba> x){
 }
 
 bool kisebb(vector<Proba> x, vector<Proba> y){
+    vector<Proba> kisebbx(x);
+    vector<Proba> kisebby(y);
+    kisebbx.pop_back();
+    kisebby.pop_back();
     return (legjobbugras(x).Magassag < legjobbugras(y).Magassag) ||
            (legjobbugras(x).Magassag == legjobbugras(y).Magassag && legjobbugras(x).Db > legjobbugras(y).Db) ||
-           (legjobbugras(x).Magassag == legjobbugras(y).Magassag && legjobbugras(y) == y[0]);
+           (legjobbugras(x).Magassag == legjobbugras(y).Magassag && legjobbugras(x).Db == legjobbugras(y).Db && legjobbugras(y).Sorszam == 1) ||
+           (legjobbugras(x).Magassag == legjobbugras(y).Magassag && legjobbugras(x).Db == legjobbugras(y).Db && legjobbugras(y).Sorszam != 1 && kisebb(kisebbx, kisebby));
 }
 
 void rendez(vector<vector<Proba> > emberek, vector<int> &index){
