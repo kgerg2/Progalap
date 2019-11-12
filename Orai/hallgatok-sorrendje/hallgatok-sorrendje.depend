@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1573572378 source:c:\users\x8b97c\documents\orai\hallgatok-sorrendje\main.cpp
+	<iostream>
+	<time.h>
+	<stdio.h>
+	<vector>
+	<algorithm>
+
