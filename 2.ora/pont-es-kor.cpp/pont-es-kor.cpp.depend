@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1582284861 source:c:\users\x8b97c\documents\2.ora\pont-es-kor.cpp\main.cpp
+	<iostream>
+	<fstream>
+	<vector>
+	<math.h>
+
