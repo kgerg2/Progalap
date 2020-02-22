@@ -25,9 +25,26 @@ public:
         return Complex(re * z.re - im * z.im, im * z.re + re * z.im);
     }
 
-    Complex operator/(float x) const
+    Complex operator/(const Complex &z) const
     {
-        return Complex(re / x, im / x);
+        Complex n = *this * z.conj();
+        float d = (z * z.conj()).re;
+        return Complex(n.re / d, n.im / d);
+    }
+
+    Complex conj() const
+    {
+        return Complex(re, -im);
+    }
+
+    Complex add_inv() const
+    {
+        return Complex(-re, -im);
+    }
+
+    Complex recipr() const
+    {
+        return Complex(1, 0) / *this;
     }
 
     double abs() const
