@@ -6,7 +6,8 @@
         "xutility": "cpp",
         "iostream": "cpp",
         "istream": "cpp",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "utility": "cpp"
     },
     "python.pythonPath": "C:\\Users\\kgerg\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 }

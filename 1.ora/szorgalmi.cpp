@@ -9,7 +9,8 @@ int main()
 {
     int x, fst, maxc, maxel;
     vector<int> v;
-    ifstream f(".\\1.ora\\input.txt");
+    vector<pair<int, int>> h; // érték - darabszám párok
+    ifstream f("input.txt");
     if (!f.fail())
     {
         while (f >> x)
@@ -22,25 +23,26 @@ int main()
         cout << "Hiba";
         return 1;
     }
-    sort(v.begin(), v.end());
-    fst = 0;
+    sort(v.begin(), v.end()); // rendezés tétel
     maxc = 1;
     maxel = v[0];
-    for (int i = 1; i < v.size(); i++)
+    h.emplace_back(v[0], 1);
+    for (int i = 1; i < v.size(); i++) // számlálás és maximum-kiválasztás
     {
-        if (v[i] != v[i-1])
+        if (h.back().first == v[i])
         {
-            if (maxc < i - fst)
+            h.back().second++;
+            if (h.back().second > maxc)
             {
-                maxc = i - fst;
-                maxel = v[fst];
+                maxel = h.back().first;
+                maxc = h.back().second;
             }
-            fst = i;
+            
         }
-    }
-    if (maxc < v.size() - fst)
-    {
-        maxel = v[fst];
+        else
+        {
+            h.emplace_back(v[i], 1);
+        }
     }
     cout << maxel << endl;
     return 0;
