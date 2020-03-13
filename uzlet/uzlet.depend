@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1583848947 source:c:\users\x8b97c\documents\uzlet\main.cpp
+	<iostream>
+	<vector>
+	"read.hpp"
+
+1583847097 c:\users\x8b97c\documents\uzlet\read.hpp
+	<iostream>
+	<sstream>
+	<string>
+
