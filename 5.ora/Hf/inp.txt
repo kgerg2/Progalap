@@ -1,0 +1,9 @@
+2 borsoleves 14:20 3 700
+1 borsoleves 15:10 4 700
+5 caesar-salata 11:30 4 1000
+3 caesar-salata 12:30 1 1000
+2 caesar-salata 14:50 3 1000
+1 lecso 15:40 5 800
+4 lecso 16:40 2 800
+3 lecso 17:30 3 800
+
