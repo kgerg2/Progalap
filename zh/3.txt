@@ -1,0 +1,6 @@
+323456789 SzentImrekórház Korányi P Korányi N Korányi N
+123456789 Honvédkórház Zacher P Nagy N
+123456788 Honvédkórház Zacher P Nagy N Nagy N
+123456787 Honvédkórház Zacher P Nagy N Nagy N
+223456789 Rókuskórház Semmelweis P Nagy N
+223456788 Rókuskórház Nagy P Semmelweis P Semmelweis N
