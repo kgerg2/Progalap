@@ -49,7 +49,15 @@
         "xstddef": "cpp",
         "xstring": "cpp",
         "xtr1common": "cpp",
-        "xtree": "cpp"
+        "xtree": "cpp",
+        "chrono": "cpp",
+        "deque": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "regex": "cpp",
+        "unordered_map": "cpp",
+        "variant": "cpp",
+        "xhash": "cpp"
     },
     "python.pythonPath": "C:\\Users\\kgerg\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
 }
